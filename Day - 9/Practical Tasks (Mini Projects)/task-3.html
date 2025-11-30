@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .messages {
+      flex: 1;
+      display: flex;
+      flex-direction: column-reverse;
+      overflow-y: auto;
+      padding: 10px;
+      background: #d090bd;
+      gap: 10px;
+    }
+
+    .msg {
+      background: rgb(255, 255, 255);
+      padding: 15px;
+      border-radius: 6px;
+      max-width: 15%;
+    }
+
+    .me {
+      background: #51cef8;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .input-bar {
+      padding: 10px;
+      background: rgb(253, 253, 253);
+      border-top: 1px solid #ddd;
+      display: flex;
+      gap: 8px;
+    }
+
+    .input-bar input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .input-bar button {
+      padding: 8px 14px;
+      border: none;
+      background: #4f46e5;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="messages">
+    <div class="msg">Hello</div>
+    <div class="msg me">Hi!</div>
+    <div class="msg">What's up?</div>
+  </div>
+
+
+  <div class="input-bar">
+    <input type="text" placeholder="Type…" />
+    <button>Send</button>
+  </div>
+
+</body>
+</html>

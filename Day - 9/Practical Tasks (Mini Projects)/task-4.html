@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toolbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #eee;
+    gap: 10px;
+  }
+
+  .search {
+    margin-left: auto;   
+    margin-right: auto;
+  }
+
+  .actions {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+  }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+  <div class="filters">
+    <select><option>All</option></select>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Search">
+  </div>
+
+  <div class="actions">
+    <button>Add</button>
+    <button>Export</button>
+  </div>
+</div>
+</body>
+</html>

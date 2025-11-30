@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix Flex Overflow</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .container {
+      display: flex;
+      width: 300px;
+      border: 3px solid #e90a0a;
+      background: #ce7c7c;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .flex-item {
+      padding: 10px;
+      background: #e1cbcb;
+      border-radius: 6px;
+    }
+    .long {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Flex Overflow Fix</h2>
+
+  <div class="container">
+    <div class="flex-item">Short</div>
+    <div class="flex-item long">
+      This is a very long text block that will shrink instead of overflowing because we applied min-width: 0.
+    </div>
+  </div>
+
+</body>
+</html>

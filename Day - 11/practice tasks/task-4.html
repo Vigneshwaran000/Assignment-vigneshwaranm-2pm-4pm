@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Align-Self</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 150px;
+            background: lightgray;
+            align-items: center;   
+            padding: 20px;
+        }
+
+        .box {
+            background: lightgreen;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .special{
+            align-self: flex-start;
+            background: yellow;     
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Using align-self on One Flex Item</h2>
+
+    <div class="container">
+        <div class="box">Item 1</div>
+        <div class="box special">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+
+</body>
+</html>

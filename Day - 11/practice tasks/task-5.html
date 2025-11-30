@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Column Grid</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            background: lightgray;
+            padding: 20px;
+        }
+
+        .box {
+            background: lightcoral;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>2-Column Grid (1fr 2fr)</h2>
+
+    <div class="grid">
+        <div class="box">Column 1 (1fr)</div>
+        <div class="box">Column 2 (2fr)</div>
+    </div>
+
+</body>
+</html>

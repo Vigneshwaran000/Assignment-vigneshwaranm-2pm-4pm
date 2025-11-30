@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Navbar</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial,sans-serif;
+    }
+
+    nav {
+        position: sticky;   
+        top: 0;            
+        background: #333;
+        color: white;
+        padding: 16px;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .content {
+        height: 2000px; 
+        padding: 20px;
+        background: #d3cece;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="content">
+    <h2>Scroll Down</h2>
+    <p>The navbar stays at the top!</p>
+</div>
+
+</body>
+</html>

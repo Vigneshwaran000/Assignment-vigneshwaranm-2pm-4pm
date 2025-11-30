@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex toolbar</title>
+    <style>
+        .toolbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #dc8181;
+        }
+        .toolbar > .center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .toolbar > button:last-child {
+            margin-left: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+  <button>Left</button>
+
+  <div class="center">
+    <button>Center</button>
+  </div>
+
+  <button>Right</button>
+</div>
+
+</body>
+</html>
