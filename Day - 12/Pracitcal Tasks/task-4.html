@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Toolbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #111;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      background: #1e1e1e;
+      gap: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    /* LEFT - Filters */
+    .filters button {
+      padding: 6px 12px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .filters button:hover{
+        background: #5b5656;
+    }
+
+    /* CENTER - Search */
+    .search {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .search input {
+      padding: 7px 12px;
+      width: 250px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    /* RIGHT - Actions */
+    .actions button {
+      padding: 7px 14px;
+      margin-left: 6px;
+      background: #4c8bf5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .actions button:hover{
+        background: darkblue;
+    }
+
+    .actions button:last-child {
+      background: #22c55e;
+    }
+
+    .actions button:last-child:hover{
+        background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+
+    <!-- LEFT -->
+    <div class="filters">
+      <button>All</button>
+      <button>Active</button>
+      <button>Done</button>
+    </div>
+
+    <!-- CENTER -->
+    <div class="search">
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="actions">
+      <button>Add</button>
+      <button>Export</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

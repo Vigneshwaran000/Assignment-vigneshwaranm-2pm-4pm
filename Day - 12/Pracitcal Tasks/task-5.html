@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Grid Row</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #111;
+      font-family: Arial;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    /* PHOTO ROW */
+    .photo-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;       /* ✅ vertical center */
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      flex: 1 1 180px;
+      height: 220px;
+      background: #333333;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;      /* ✅ center image vertically */
+      justify-content: center;  /* ✅ center image horizontally */
+    }
+
+    .photo:hover{
+        transform: scale(1.05);
+    }
+
+    .photo img {
+      width: auto;
+      height: auto;
+      object-fit: cover;        /* ✅ keeps aspect ratio */
+    }
+
+    @media (max-width: 600px) {
+      .photo {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Avengers Gallery</h2>
+
+  <div class="photo-row">
+
+    <div class="photo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg" alt="The Avengers">
+    </div>
+
+    <div class="photo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Avengers_Age_of_Ultron_poster.jpg" alt="Avengers: Age of Ultron">
+    </div>
+
+    <div class="photo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg" alt="Avengers: Infinity War">
+    </div>
+
+    <div class="photo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Avengers: Endgame ">
+    </div>
+
+  </div>
+
+</body>
+</html>

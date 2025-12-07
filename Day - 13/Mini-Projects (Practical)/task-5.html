@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a Services Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f4f4f4;
+    }
+
+    .services {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>We create beautiful websites.</p>
+      </div>
+
+      <div class="card">
+        <h3>Development</h3>
+        <p>We build fast web applications.</p>
+      </div>
+
+      <div class="card">
+        <h3>SEO</h3>
+        <p>We help your site rank on Google.</p>
+      </div>
+
+      <div class="card">
+        <h3>Marketing</h3>
+        <p>We grow your business online.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

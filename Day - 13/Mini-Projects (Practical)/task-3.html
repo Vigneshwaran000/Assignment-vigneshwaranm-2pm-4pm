@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Product Grid </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: rgb(4, 4, 50);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;                
+      padding: 20px;
+    }
+
+    .card {
+      background: rgb(46, 48, 86);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgb(255, 255, 255);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: rgb(162, 225, 231);
+    }
+
+    .card p {
+      margin: 0;
+      color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center; color: white;">Product Grid</h1>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png">
+      <h3>Apple iPhone 14 Pro Max</h3>
+      <p>$1,000</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-15-pro-max.png">
+      <h3>Apple iPhone 15 Pro Max</h3>
+      <p>$1,225</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121032-iphone-16-pro-max.png">
+      <h3>Apple iPhone 16 Pro Max</h3>
+      <p>$1,725</p>
+    </div>
+
+    <div class="card">
+        <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-17-pro-17-pro-max-hero.png">
+      <h3>Apple iPhone 17 Pro Max</h3>
+      <p>$2,000</p>
+    </div>
+</div>
+</body>
+</html>

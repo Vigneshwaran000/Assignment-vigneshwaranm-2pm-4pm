@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Photo Gallery </title>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            
+        }
+        .gallery img:hover{
+          transform: scale(1.25);
+        }
+        .gallery img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: .1s;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Responsive Photo Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://media.gettyimages.com/id/2167147620/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrating-after-scores-the-1st-goal.jpg?s=612x612&w=0&k=20&c=Gu2nyprqwGwK0SUBdEGRZ8rvW68nIXBAJyj2fHYYzWU=">
+        <img src="https://media.gettyimages.com/id/2247567358/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-team-al-nassr-fc-scores-their-fourth-goal-during-the.jpg?s=612x612&w=0&k=20&c=lyyIFd6iB9tKfYmwGXaHe8CU0T1WBiNAGuyw3k03E78=">
+        <img src="https://media.gettyimages.com/id/2172436030/photo/dammam-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-after-scoring-the-1st-goal.jpg?s=612x612&w=0&k=20&c=LO7Cm1b3NrAfwju9pGs6sUtRwjn1uMvpUEFvoYdw6Iw=">
+        <img src="https://media.gettyimages.com/id/2151452685/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrating-after-the-goal-during-the-saudi.jpg?s=612x612&w=0&k=20&c=qTVxxzyIbDCyuI33L6i1pEKdQNCi2tw5Y2eNOC4fybk=">
+        <img src="https://media.gettyimages.com/id/2150898372/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-after-scoring-the-1st-goal.jpg?s=612x612&w=0&k=20&c=d9yCcewUNp3-IuAZ_jerMS_ZQCjvcRWfmpyrTAbGyKA=">
+        <img src="https://media.gettyimages.com/id/2150901120/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-after-scoring-the-2nd-goal.jpg?s=612x612&w=0&k=20&c=ULeZb43DuJVBUGckVRJKMy29rvh4lTV8LvI_p_qVbjk=">
+        <img src="https://media.gettyimages.com/id/2235953334/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-team-al-nassr-fc-celebrates-scoring-their-fifth-goal.jpg?s=612x612&w=0&k=20&c=DTAya2FXmElxeGo0URvRgFgicHwU_TP9OrO3UrgH6BQ=">
+        <img src="https://media.gettyimages.com/id/1245964699/photo/riyadh-saudi-arabia-cristiano-ronaldo-accompanied-by-his-partner-georgina-rodriguez-and-his.jpg?s=612x612&w=0&k=20&c=W5FHtS_CgCy1GjX2THgc8odz_cfGHmeP4_a9b2SB9vI=">
+        <img src="https://media.gettyimages.com/id/2234200789/photo/cristiano-ronaldo-of-portugal-celebrates-after-scoring-a-goal-during-european-world-cup.jpg?s=612x612&w=0&k=20&c=JTqpZs71TyR-oWmPqsnTQ2i5Mim1VukWJSuxq9DHcrk=">
+        <img src="https://media.gettyimages.com/id/2178130283/photo/warsaw-poland-cristiano-ronaldo-reacts-after-scoring-his-team-second-goal-during-the-uefa.jpg?s=612x612&w=0&k=20&c=SHWigqQPPTLrWOeLrB9PgbjED_7UPVReLGlcjyCc1uM=">
+        <img src="https://media.gettyimages.com/id/2126131380/photo/abha-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-after-scoring-the-4th-goal-during.jpg?s=612x612&w=0&k=20&c=uzouqaPwtH3ERcdKksYIpk9Mkaw1ZC9W955gGrmF_K0=">
+        <img src="https://media.gettyimages.com/id/2156574622/photo/aveiro-portugal-cristiano-ronaldo-of-portugal-celebrates-his-goal-during-the-international.jpg?s=612x612&w=0&k=20&c=dbqiPoJ8NSyVynF7TycYr4oAN1yOQyKRhWctIT61Mps=">
+        <img src="https://media.gettyimages.com/id/2170263779/photo/lisbon-portugal-cristiano-ronaldo-of-portugal-celebrates-after-scoring-his-teams-second-goal.jpg?s=612x612&w=0&k=20&c=YxB9MP4J_4_vPUHayh8l9M7qnXB_gKvzw5V-x3OdSZ8=">
+        <img src="https://media.gettyimages.com/id/2028405189/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-scoring-his-teams-second-goal.jpg?s=612x612&w=0&k=20&c=VhakFinBR7TAd76_XQWuGJ5Qk0wQndpGbc9suvOQKxE=">
+        <img src="https://media.gettyimages.com/id/2235953063/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-team-al-nassr-fc-celebrates-scoring-their-fifth-goal.jpg?s=612x612&w=0&k=20&c=EOsIlJ7E3OacZxVEzJF4QONwEtZuQgKdRh04l9qKqHw=">
+        <img src="https://media.gettyimages.com/id/2170413805/photo/lisbon-portugal-cristiano-ronaldo-of-portugal-celebrates-scoring-his-teams-second-goal-during.jpg?s=612x612&w=0&k=20&c=b4y7t2FXIBxzDlZzOzl_PRPehauQN3k-_n3gEF74Cos=">
+        <img src="https://media.gettyimages.com/id/2169320867/photo/monaco-monaco-cristiano-ronaldo-portuguese-professional-footballer-reacts-during-the-uefa.jpg?s=612x612&w=0&k=20&c=PFprpBBCSmbsHs_LXQczyhWDYWy8lKVwgvPSaSQjJJc=">
+        <img src="https://media.gettyimages.com/id/2240657943/photo/lisbon-portugal-cristiano-ronaldo-of-portugal-celebrates-after-scoring-his-teams-first-goal.jpg?s=612x612&w=0&k=20&c=1uo_I9TjBCeCkNTWlUlwp0uwyGIFffRUc_-ZxCsYRgk=">
+        <img src="https://media.gettyimages.com/id/1181458812/photo/juventus-portuguese-forward-cristiano-ronaldo-reacts-during-the-italian-serie-a-football.jpg?s=612x612&w=0&k=20&c=MH2oW6wrUEYHeG_wo5tsXIhjUoMaLd7UDEqSUQjrmJ4=">
+        <img src="https://media.gettyimages.com/id/2206295328/photo/cristiano-ronaldo-of-portugal-in-action-during-the-uefa-nations-league-quarterfinal-leg-two.jpg?s=612x612&w=0&k=20&c=_LkwlIfsZe_KR7vG0Ck-iapDmfwMP5jaYYgWoCk1Y0E=">
+        <img src="https://media.gettyimages.com/id/1165192741/photo/juventus-portuguese-forward-cristiano-ronaldo-celebrates-after-scoring-a-goal-during-the.jpg?s=612x612&w=0&k=20&c=KQnOcEoipFQsxnVK9bMM-INKv91RpBZaie7xm46aCpQ=">
+        <img src="https://media.gettyimages.com/id/2156560331/photo/aveiro-portugal-cristiano-ronaldo-of-portugal-celebrates-after-scoring-a-goal-during-the.jpg?s=612x612&w=0&k=20&c=Qd9BZMqNXTjZ9QnrkB3dwZ7p0uWnbicYXYcnwpjUOtQ=">
+        <img src="https://media.gettyimages.com/id/1734016483/photo/porto-portugal-cristiano-ronaldo-of-portugal-celebrates-after-scoring-the-teams-second-goal.jpg?s=612x612&w=0&k=20&c=fGANBJ2rUEwWId8ElANwxr5wdYm78OCKZG2W7W2RGmQ=">
+        <img src="https://media.gettyimages.com/id/2194545009/photo/dammam-saudi-arabia-cristiano-ronaldo-of-al-nassr-celebrates-after-scoring-the-3rd-goal.jpg?s=612x612&w=0&k=20&c=J2TC9r0DG0PyR_LpIY4_RwPkd5Sx9uMM8Fp8Z02uFjE=">
+        <img src="https://media.gettyimages.com/id/667754524/photo/topshot-real-madrids-portuguese-forward-cristiano-ronaldo-kisses-the-ball-bvefore-taking-a.jpg?s=612x612&w=0&k=20&c=kyLz8WjrrHdLPXQbIiLdDsUMRMacSH4ULji8QFQ06xc=">
+        <img src="https://media.gettyimages.com/id/2031349952/photo/riyadh-saudi-arabia-cristiano-ronaldo-of-al-nassr-scores-the-1st-goal-during-the-saudi-pro.jpg?s=612x612&w=0&k=20&c=u-m__NgqIoZQddFaO99el7rvy84KLv4p_1EmeM7QU2E=">
+        <img src="https://media.gettyimages.com/id/51012712/photo/lisbon-portugal-cristiano-ronaldo-of-portugal-celebrates-scoring-their-first-goal-during-the.jpg?s=612x612&w=0&k=20&c=I91u-3RsclVTbVo4kZTbKOsJSrTmYXH6bg9WhtxTImg=">
+        
+    </div>
+</body>
+</html>
