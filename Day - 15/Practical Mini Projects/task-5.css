@@ -2,6 +2,7 @@ body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #6a6666;
+      min-height: 200vh;
     }
 
     /* Navbar */
@@ -28,7 +29,6 @@ body {
 
     /* Hero */
     .hero {
-      background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
       height: 60vh;
       display: flex;
       justify-content: center;
@@ -41,6 +41,7 @@ body {
     }
     .hero p {
       font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
     }
 
     /* Projects */
@@ -48,8 +49,10 @@ body {
       padding: 40px 20px;
       text-align: center;
     }
-    .projects h2 {
+    .projects h1 {
       margin-bottom: 30px;
+      color: rgb(240, 226, 226);
+      font-size: 40px;
     }
     .project-grid {
       display: grid;
@@ -58,10 +61,11 @@ body {
     }
     .project-card {
       background: white;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 15px;
+      border-radius: 10px;
       text-align: center;
       position: relative;
+      margin: 35px;
     }
     .project-card p{
         font-weight: 600;
