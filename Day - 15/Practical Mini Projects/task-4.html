@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .gallery {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="gallery">
+    <h2>Lamborghini Photo Gallery</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/10550012/pexels-photo-10550012.jpeg?cs=srgb&dl=pexels-autorecords-10550012.jpg&fm=jpg" alt="Photo 1">
+      <img src="https://images.pexels.com/photos/10394782/pexels-photo-10394782.jpeg" alt="Photo 2">
+      <img src="https://images.pexels.com/photos/10550011/pexels-photo-10550011.jpeg" alt="Photo 3">
+      <img src="https://images.pexels.com/photos/10394775/pexels-photo-10394775.jpeg" alt="Photo 4">
+      <img src="https://images.pexels.com/photos/8664335/pexels-photo-8664335.jpeg" alt="Photo 5">
+      <img src="https://images.pexels.com/photos/10553205/pexels-photo-10553205.jpeg" alt="Photo 6">
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE-FRIENDLY CARD GRID</title>
+  <style>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #ff94dd;
+      padding: 20px;
+      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+      border: 2px solid;
+      border-radius: 25%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+
+</body>
+</html>

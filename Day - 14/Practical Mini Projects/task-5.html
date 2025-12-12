@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE PRODUCT DISPLAY PAGE</title>
+  <style>
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .product {
+      background: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      border: 2px solid;
+      font-weight: bold;
+      font-size: larger;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="products">
+    <div class="product">Product 1</div>
+    <div class="product">Product 2</div>
+    <div class="product">Product 3</div>
+    <div class="product">Product 4</div>
+  </div>
+
+</body>
+</html>

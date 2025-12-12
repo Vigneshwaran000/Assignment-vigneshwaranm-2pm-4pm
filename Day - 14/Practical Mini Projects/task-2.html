@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE 3-SECTION SERVICES LAYOUT</title>
+  <style>
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .box {
+      background: #bbff00;
+      padding: 30px;
+      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+      border-radius: 30px;
+      border: 1px solid;
+    }
+
+    @media (max-width:600px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="services">
+    <div class="box">Service 1</div>
+    <div class="box">Service 2</div>
+    <div class="box">Service 3</div>
+  </div>
+
+</body>
+</html>

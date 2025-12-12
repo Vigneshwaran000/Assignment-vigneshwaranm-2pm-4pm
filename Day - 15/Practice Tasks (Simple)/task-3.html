@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert 2-column layout to 1 column at 768px</title>
+    <style>
+       .container {
+         display: flex;
+         gap: 20px;
+        }
+
+        .column {
+          flex: 1;
+          background-color: rgb(20, 67, 20);
+          color: white;
+          padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+             flex-direction: column;
+            }
+        } 
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
+
+</body>
+</html>

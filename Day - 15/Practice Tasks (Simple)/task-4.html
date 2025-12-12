@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize an image to 100% width on small screens</title>
+    <style>
+        .responsive-img {
+          width: 400px;
+          height: auto;
+        }
+
+        @media (max-width: 600px) {
+          .responsive-img {
+             width: 100%; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-e7b795e0e30fe4125fc126a49c06fd95" class="responsive-img">
+</body>
+</html>
