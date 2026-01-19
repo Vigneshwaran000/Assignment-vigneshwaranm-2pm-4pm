@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="Enter task" />
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+<script>
+  function addTask() {
+    const taskText = document.getElementById("taskInput").value;
+    if (taskText === "") return;
+
+    const li = document.createElement("li");
+    li.innerText = taskText;
+
+    li.addEventListener("click", () => {
+      li.parentNode.removeChild(li);
+    });
+
+    document.getElementById("taskList").appendChild(li);
+    document.getElementById("taskInput").value = "";
+  }
+</script>
+
+</body>
+</html>
