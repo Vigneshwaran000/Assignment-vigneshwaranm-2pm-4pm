@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling vs Capturing</title>
+
+  <style>
+    #parent {
+      background: lightblue;
+      padding: 50px;
+    }
+
+    #child {
+      background: orange;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Event Bubbling vs Capturing</h2>
+
+<div id="parent">
+  Parent
+  <div id="child">
+    Child
+  </div>
+</div>
+
+<script>
+  let parent = document.getElementById("parent");
+  let child = document.getElementById("child");
+
+  // Bubbling (default)
+  parent.addEventListener("click", () => {
+    console.log("Parent (Bubbling)");
+  });
+
+  child.addEventListener("click", () => {
+    console.log("Child (Bubbling)");
+  });
+
+  // Capturing
+  parent.addEventListener("click", () => {
+    console.log("Parent (Capturing)");
+  }, true);
+
+  child.addEventListener("click", () => {
+    console.log("Child (Capturing)");
+  }, true);
+</script>
+
+</body>
+</html>

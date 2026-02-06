@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Data App</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      color: darkblue;
+    }
+
+    #loading {
+      font-size: 18px;
+      color: green;
+    }
+
+    .user {
+      padding: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📊 Simple Data App</h2>
+
+  <p id="loading"></p>
+
+  <div id="output"></div>
+
+  <script>
+
+    let output = document.getElementById("output");
+    let loading = document.getElementById("loading");
+
+    // -------------------------------
+    // Save name in localStorage
+    // -------------------------------
+    let userName = "Vigneshwaran";
+
+    let jsonName = JSON.stringify(userName);
+
+    localStorage.setItem("username", jsonName);
+
+
+    // -------------------------------
+    // Get saved name
+    // -------------------------------
+    let savedName = JSON.parse(localStorage.getItem("username"));
+
+    console.log("Saved User:", savedName);
+
+
+    // -------------------------------
+    // Fetch API Data
+    // -------------------------------
+    function loadUsers() {
+
+      loading.innerText = "Loading data... ⏳";
+
+      fetch("https://jsonplaceholder.typicode.com/users")
+
+        .then(response => {
+
+          if (!response.ok) {
+            throw "Network Error";
+          }
+
+          return response.json();
+
+        })
+
+        .then(data => {
+
+          loading.innerText = "";
+
+          data.forEach(user => {
+
+            let div = document.createElement("div");
+            div.className = "user";
+
+            div.innerHTML = `
+              <b>Name:</b> ${user.name} <br>
+              <b>Email:</b> ${user.email}
+            `;
+
+            output.appendChild(div);
+
+          });
+
+        })
+
+        .catch(error => {
+
+          loading.innerText = "";
+          output.innerHTML = "❌ Error Loading Data";
+
+          console.log("Error:", error);
+
+        });
+
+    }
+
+
+    // Call function
+    loadUsers();
+
+  </script>
+
+</body>
+</html>

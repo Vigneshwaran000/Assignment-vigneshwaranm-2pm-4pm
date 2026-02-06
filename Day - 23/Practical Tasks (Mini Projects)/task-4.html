@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Form Validation</h2>
+
+<form id="myForm">
+
+  Name: <input type="text" id="name"><br><br>
+  Email: <input type="email" id="email"><br><br>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+<p id="msg" class="error"></p>
+
+<script>
+  let form = document.getElementById("myForm");
+
+  form.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let msg = document.getElementById("msg");
+
+    if (name === "" || email === "") {
+      msg.textContent = "All fields are required!";
+    } else {
+      msg.textContent = "Form Submitted Successfully ✅";
+      msg.style.color = "green";
+    }
+
+  });
+</script>
+
+</body>
+</html>

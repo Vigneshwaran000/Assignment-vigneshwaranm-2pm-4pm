@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prevent Submit</title>
+</head>
+<body>
+
+<form id="myForm">
+  <input type="text" placeholder="Enter Name" required>
+  <button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+  let form = document.getElementById("myForm");
+  let msg = document.getElementById("msg");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Stop form submit
+
+    msg.textContent = "Form submission prevented!";
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Input</title>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Type here...">
+<p>Output: <span id="output"></span></p>
+
+<script>
+  let input = document.getElementById("myInput");
+  let output = document.getElementById("output");
+
+  input.addEventListener("input", function () {
+    output.textContent = input.value;
+  });
+</script>
+
+</body>
+</html>

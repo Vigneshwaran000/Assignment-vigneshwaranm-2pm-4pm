@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Event Playground</title>
+
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 200px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 50px auto;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Mouse Event Playground</h2>
+
+<div id="box">Try Me</div>
+
+<script>
+  let box = document.getElementById("box");
+
+  // Click Event
+  box.addEventListener("click", function () {
+    box.style.backgroundColor = "lightgreen";
+    box.textContent = "Clicked!";
+  });
+
+  // Double Click Event
+  box.addEventListener("dblclick", function () {
+    box.style.backgroundColor = "orange";
+    box.textContent = "Double Clicked!";
+  });
+
+  // Mouse Over Event
+  box.addEventListener("mouseover", function () {
+    box.style.backgroundColor = "skyblue";
+    box.textContent = "Mouse Over!";
+  });
+
+  // Mouse Out (Optional - Reset)
+  box.addEventListener("mouseout", function () {
+    box.style.backgroundColor = "lightgray";
+    box.textContent = "Try Me";
+  });
+</script>
+
+</body>
+</html>
